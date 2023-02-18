@@ -3,3 +3,10 @@
 <p><%= @article.body %></p>
 
 <a href="/articles">back to list</a>
+
+<ul>
+    <li><%= link_to "Destroy", article_path(@article), data: {
+        turbo_method: :delete,
+        turbo_confirm: "Are you sure?"
+    } %>
+</ul>
