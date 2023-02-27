@@ -1,0 +1,33 @@
+<%= form_with model: @book do |form| %>
+    <div>
+        <%= form.label :title %><br>
+        <%= form.text_field :title %>
+    </div>
+
+    <div>
+        <%= form.label :description %><br>
+        <%= form.text_area :description %>
+    </div>
+
+    <div>
+        <%= form.submit %>
+    </div>
+<% end %>
+
+<%# do な書き方 %>
+
+<form action="/books" method="post" accept-charset="UTF-8" >
+  <div>
+    <label for="books_title">Title</label><br>
+    <input id="books_title" name="book[title]" type="text" />
+  </div>
+
+  <div>
+    <label for="books_description">Description</label><br>
+    <textarea id="books_description" name="book[description]"></textarea>
+  </div>
+
+  <div>
+    <input type="submit" value="Create Book" />
+  </div>
+</form> 
