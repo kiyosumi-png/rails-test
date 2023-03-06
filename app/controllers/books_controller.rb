@@ -5,7 +5,6 @@ class BooksController < ApplicationController
 
   def new
     @book = Book.new
-    #インスタンス変数の仕組み
   end
 
   def create
@@ -16,9 +15,19 @@ class BooksController < ApplicationController
     redirect_to action: :index
   end
 
+  def edit
+    @book = Book.find(params[:id])
+  end
+
+  def update
+    @book = Book.find(params[:id])
+
+    @book.update(book_params)
+    redirect_to action: :index
+  end
+
   private
     def book_params
       params.require(:book).permit(:title, :description)
     end
-    #private な関数
 end

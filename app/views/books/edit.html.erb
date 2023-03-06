@@ -1,0 +1,17 @@
+<h2><%= @book.title %></h2>
+
+<%= form_with model: @book, url: book_path(@book) do |form| %>
+    <div>
+        <%= form.label :title %><br>
+        <%= form.text_field :title %>
+    </div>
+
+    <div>
+        <%= form.label :description %><br>
+        <%= form.text_area :description %>
+    </div>
+
+    <div>
+        <%= form.submit "Update"%>
+    </div>
+<% end %>
