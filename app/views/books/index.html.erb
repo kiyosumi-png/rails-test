@@ -3,9 +3,11 @@
 <ul>
   <% @books.each do |book| %>
     <li>
-      <%= book.title %>
-      <%= book.description %>
-      <%= button_to '削除', delete_book_path(book), method: :delete %>
+      <p style="color:red"><%= book.title %></p>
+      <p class="description"><%= book.description %></p>
+      <%=  button_to '削除', delete_book_path(book), method: :delete %>
     </li>
   <% end %>
 </ul>
+
+<%= stylesheet_link_tag "/books/index.css"%>
