@@ -11,6 +11,9 @@ module App
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    config.assets.configure do |env|
+      env.register_transformer 'text/scss', 'text/css', :sassc
+    end
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
