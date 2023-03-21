@@ -1,0 +1,10 @@
+<div class="book-details">
+  <h2 class="book-title"><%= @book.title %></h2>
+  <p class="book-description"><%= @book.description %></p>
+  <div class="book-actions">
+    <%= link_to 'Edit', edit_book_path(@book), class: "btn btn-primary" %>
+    <%= button_to 'Delete', delete_book_path(@book), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+  </div>
+</div>
+
+<%= stylesheet_link_tag 'show' %>
