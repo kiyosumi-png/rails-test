@@ -1,13 +1,12 @@
 <h1 class="page-title">Books</h1>
 
-<ul>
-  <% @books.each do |book| %>
-    <li>
-      <p style="color:red"><%= book.title %></p>
-      <p class="description"><%= book.description %></p>
-      <%=  button_to '削除', delete_book_path(book), method: :delete %>
-    </li>
-  <% end %>
-</ul>
+<%= link_to 'New Book', new_book_path%>
 
-<%= stylesheet_link_tag '/books/index' %>
+<% @books.each do |book| %>
+  <div>
+    <%= link_to book.title, detail_book_path(book) %>
+    <p><%= book.description %></p>
+  </div>
+<% end %>
+
+<%= stylesheet_link_tag 'index' %>

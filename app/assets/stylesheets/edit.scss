@@ -1,0 +1,49 @@
+//SCSS code
+
+//h2タグのスタイリング
+h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  //フォームのスタイリング
+form {
+    max-width: 500px;
+    margin: 0 auto;
+  
+    div {
+      margin-bottom: 20px;
+  
+      label {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+  
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #0069d9;
+        }
+      }
+    }
+  }
+  

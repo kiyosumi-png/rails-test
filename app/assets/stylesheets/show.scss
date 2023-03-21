@@ -1,0 +1,49 @@
+/* 詳細ページ全体のスタイル */
+.book-details {
+    margin: 2rem;
+  }
+  
+  /* タイトルのスタイル */
+  .book-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* 説明文のスタイル */
+  .book-description {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* ボタンのスタイル */
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* アクションボタンのスタイル */
+  .book-actions {
+    margin-top: 1rem;
+  }
+  
