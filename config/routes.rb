@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  root "articles#index"
+  root "books#index"
 
-  # get "/articles", to: "articles#index" 
-  # get "/articles/add", to: "articles#new"
-  # get "/articles/:id", to: "articles#show"
-  # post "/articles", to: "articles#create"
+  get "books/new", to: "books#new", as: "new_book"
+  post "/books", to: "books#create"
 
-  # get "/articles/:id/edit", to: "articles#edit"
-  # patch "/articles/:id", to: "articles#update"
+  get "books/:id", to: "books#show", as: "detail_book"
 
-  resources :articles
+  get "books/:id/edit", to: "books#edit", as: "edit_book"
+  patch "books/:id", to: "books#update", as: "book"
+
+  delete "books/:id/delete", to: "books#destroy", as: "delete_book"
 end

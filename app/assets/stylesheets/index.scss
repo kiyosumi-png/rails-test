@@ -1,0 +1,32 @@
+// タイトルのスタイル
+.page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+  
+  // 本の表示領域のスタイル
+div {
+    border: 1px solid gray;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+    // リンクのスタイル
+    a {
+      color: blue;
+      text-decoration: none;
+      font-size: 1.2rem;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    // 説明文のスタイル
+    p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #444;
+    }
+}
+  
