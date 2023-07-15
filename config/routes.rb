@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :products
+  resources :brands
   root "articles#index"
 
   get "books/new", to: "books#new", as: "new_book"
