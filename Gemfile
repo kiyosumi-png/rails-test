@@ -71,6 +71,7 @@ group :test do
   gem "webdrivers"
 end
 
+
 gem "shakapacker", "= 7.0"
 
 gem "react-rails", "= 2.7"

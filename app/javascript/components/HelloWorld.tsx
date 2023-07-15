@@ -6,11 +6,7 @@ type Props = {
 };
 
 function HelloWorld({ greeting, name }: Props) {
-  return (
-    <div>
-      Greeting: {greeting} from {name}
-    </div>
-  );
+  return <p>Greeting: {`${greeting} ${name}`}</p>;
 }
 
 export default HelloWorld;
