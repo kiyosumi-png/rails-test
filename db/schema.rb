@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_27_015658) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_16_042849) do
   create_table "articles", charset: "utf8mb4", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -19,6 +19,26 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_27_015658) do
   end
 
   create_table "books", charset: "utf8mb4", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "brands", charset: "utf8mb4", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", charset: "utf8mb4", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "brand_id"
+  end
+
+  create_table "samples", charset: "utf8mb4", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.datetime "created_at", null: false
