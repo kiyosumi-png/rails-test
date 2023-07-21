@@ -1,1 +1,3 @@
-resources :products
+namespace :api do
+    resources :brands
+end

@@ -1,14 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
 <h1>Brands</h1>
 
-<div id="brands">
-  <% @brands.each do |brand| %>
-    <%= render brand %>
-    <p>
-      <%= link_to "Show this brand", brand_path(brand) %>
-    </p>
-  <% end %>
-</div>
-
-<%= react_component("Brand", props: {id: "hofgehoge", name: "できたてほやほやエンジニア"}) %>
+<%= react_component("Brand",  url: '/api/brands') %>
